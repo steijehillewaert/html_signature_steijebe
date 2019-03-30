@@ -1,22 +1,19 @@
 <html>
   <head>
     <style>
-      body {
+      .signature {
         font-family: "Helvetica", arial, sans-serif;
       }
 
       .text {
-        margin-top: 4px;
-        margin-left: 12px;
-        display: flex;
-        flex-direction: column;
+        padding-right: 12px;
       }
 
       td {
         vertical-align: center;
       }
 
-      p {
+      .signature p {
         line-height: 60%;
       }
 
@@ -41,37 +38,48 @@
         margin-top: 5px;
       }
 
-      img {
+      .signature img {
         border-radius: 50%;
       }
 
       a {
         color: black;
       }
+
+
     </style>
   </head>
 
   <body>
-    <table>
+    <table class="signature">
       <tr>
-        <td rowspan="3">
+        <td rowspan="6" class="text">
           <img src="https://steije.be/logo.png" heigt="70" width="70" alt="" />
         </td>
-        <td rowspan="3">
-          <div class="text">
-            <span class="name">Steije Hillewaert</span>
-            <span class="function">Creative freelancer</span>
-            <span class="mail">
-              <a href="mailto:hallo@steije.BE">hallo@steije.be</a></span
-            >
-            <span class="phone"
-              ><a href="tel:+32488215396">+324 88 21 53 96</a></span
-            >
-            <span class="site"
-              ><a href="http://www.steije.be">www.steije.be</a></span
-            >
-          </div>
-        </td>
+
+          <tr>
+            <td><span class="name">Steije Hillewaert</span><br>
+            <span class="function">Creative freelancer</span></td>
+          </tr>
+
+
+          <tr>
+            <td>
+              <a href="mailto:hallo@steije.be" class="mail">hallo@steije.be</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="tel:+32488215396" class="phone">+324 88 21 53 96</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="http://www.steije.be" class="site">www.steije.be</a>
+            </td>
+          </tr>
       </tr>
     </table>
   </body>
